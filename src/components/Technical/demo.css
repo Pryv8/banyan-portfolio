@@ -1,0 +1,24 @@
+
+.triangle{
+
+    height: 0;
+    width: 0;
+    margin: auto;
+    border-top: 1px solid transparent;
+    border-bottom: 408px solid transparent;
+    border-right: 446px solid sienna;
+    transform: rotate3d(-2, 2, 1, 1deg);
+    position: relative;
+    top: 175px;
+    left: 370px;
+    border-image: url(./images/wg4.jpg) 70% stretch;
+    
+}
+#clip1{
+    position: fixed;
+    left: 15px;
+    bottom: 115px;
+}
+
+  
+   

@@ -1,0 +1,117 @@
+.thumbnail{
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  position: relative;
+}
+
+.diamonds{
+    position: fixed;
+    animation-name: skyfall;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+   
+}
+#d1{
+    animation-timing-function: cubic-bezier(0, 0, 0.795, 0.1);
+    left:5%;
+}
+
+#d2{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    left:9%;
+    animation-delay: 2s;
+
+}
+#d5{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    left:13%;
+    animation-delay: 3s;
+}
+#d4{
+     animation-timing-function: cubic-bezier(0, 0, 0.795, 0.1);
+    right:2%;animation-delay: 2s;
+}
+#d5{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    right:7%;
+    animation-delay: 1.2s;
+
+}
+#d6{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    right:13%;animation-delay: 3s;
+
+}
+#d7{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    left:40%;
+    animation-delay: 1s;
+    
+}
+#d8{ animation-timing-function: cubic-bezier(0, 0, 0.795, 0.1);
+    left:33%;
+    animation-delay: 3s;
+}
+#d9{ animation-timing-function: cubic-bezier(0, 0, 0.795, 0.1);
+    right:39%;
+    animation-delay: 1.5s;
+}
+#d10{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    right:28%;
+    animation-delay: 2s;
+}
+#d11{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    left:19%;animation-delay: 1s;
+}
+@keyframes skyfall{
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: 800px;
+    }
+  }
+  /* body{
+      background:linear-gradient(45deg, transparent, mediumslateblue,transparent);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+    } */
+  *{
+      box-sizing: border-box;
+  }
+  .final{
+      background:url(./images/backdrop.png);
+      width:500px;
+      height: auto;
+      margin:auto;
+  }
+  .inside{
+      background:linear-gradient(45deg, transparent, mediumslateblue,transparent);
+      width:350px;
+      height:auto;
+      margin:auto;
+      padding:15px;
+      color:white;
+  }
+  #zoom-in{
+     
+      width:100%;
+      animation-name: zoom;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-out;
+    
+      
+  }
+   @keyframes zoom{ 
+      0%{background-position: left;
+          transform: scale(1.0);
+
+      }
+      50%{
+          transform:rotate(90deg);
+          
+      }
+      100%{background-position:right;
+          transform:scale(2.0);
+      }
+  } 

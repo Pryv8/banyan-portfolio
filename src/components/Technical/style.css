@@ -1,0 +1,370 @@
+ *{
+     box-sizing:border-box;
+     text-align: center;
+    
+ }
+
+#top{
+    margin-top: -1%;
+    padding:30px;
+  background-image: url(./images/wg4.jpg);
+  background-size: cover;
+    text-align:center;
+    position:fixed;
+    width:99%;
+    z-index:10;
+}
+#under{
+  z-index:3;
+}
+/* header */
+#pane{
+  background-image: url(./images/wg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-position-x: -177px;
+  position:fixed;
+  z-index:-1;
+  width: 410px;
+  height:1000px;
+  margin-top:-215px;
+ }
+
+ /* nav-bar that stays left despite screen size */
+ aside{
+   position :fixed;
+ }
+ #navbar{
+   width:425px;
+    height:100%;
+    display:inline-grid;
+    z-index:2;
+    float:left;
+    right:15px;
+    margin-top:-4%;
+    position:relative;
+    }
+    #navbar img{
+      position:relative;
+      left:-20px;
+      margin:auto;
+      border-color: rgb(97, 58, 31);
+      box-shadow:4px 2px 0px rgb(51, 26, 8); 
+      height:55px;
+      width: 250px;
+      color:tan;
+      border-width:6.8px;
+      border-style:ridge;
+      border-radius:15px;
+      
+
+    }
+    #navbar a, img:hover{
+      transform:scale(0.99, 0.98);
+    }
+    
+   
+    .nav-link{
+        color:rgb(102, 66, 19);
+        font-size:30px;
+        text-decoration:none;
+        margin:20px;
+        position: relative;
+     
+    }
+    #clip1, #clip2, #clip3, #clip4, #clip5{
+     
+     position: relative;
+    left: -30px;
+    bottom: -60px;
+    z-index: 2
+    
+      
+    }
+    
+    /* navbar */
+
+
+
+
+    /* containers for main section of page */
+    /* start of page */
+.main-section{
+     display:flex;
+    flex-direction: column;
+    background:#ebebeb, tan;
+    padding:15px;
+    margin:auto 0% auto 30%;
+    height:auto;
+    width:1000px;
+    box-shadow:10px 5px 5px black;
+    border:1px solid black;
+    border-left: none;
+ }
+ .grid{
+   display:flex;
+   flex-direction: column;
+   width:10%;
+   background: tan;
+   position: absolute;
+   left: 21%;
+   padding: 10px;
+   flex-wrap: nowrap;
+   border: 1px solid black;
+   border-right: none;
+   box-shadow: -2px 5px 5px black;
+   font-size:45px;
+   align-self: stretch;
+ }
+#small{
+  top: 216px;
+  height: 204px;
+
+}
+#med{
+  height: 229px;
+  top: 436px;
+  border-top:none;
+}
+
+
+#med img{
+  height:100px;
+  width:165px;
+  
+}
+#large{
+  height:366px;
+  border-top:none;
+
+}
+#x-large{
+height:598px;
+border-top:none;
+}
+#reg{
+  height:203px;
+  border-top:none;
+}
+
+
+/* the divs on each section needed to be tweeked */
+
+
+
+
+
+  /* Position the image container (needed to position the left and right arrows) */
+  img {
+    vertical-align:bottom;
+   
+  }
+  .sizeme{
+      margin-top:-1px;
+      height:180px;
+      border: thick solid black;
+  }
+  
+  
+  
+  .container {
+    width:450px;
+    height:185px;
+    position: relative;
+    left:30%;
+    top:-91px;
+  
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /*  pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+      left:0;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+   
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    border: thick solid black;
+  }
+ .row{
+  border: thick solid black;
+ }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* 9 columns side by side */
+  .column {
+    float: left;
+    width: 10.33%;
+    
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    height: 60px;
+    margin:0%;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/* image slide show is done */
+
+
+
+
+ .main-section header{
+    background-color:rgb(97, 58, 31);
+    color:white;
+    padding:10px;
+    font-size: 30px;
+}
+h1{
+    
+    margin:-15px;
+    width:100%;
+    padding:15px;
+    background-color:blue;
+    color:white;
+     
+
+}
+p:nth-child(even){
+    background-color: azure;
+}
+
+
+    p{
+        text-align:center;
+    }
+
+
+
+/* cellphone screens */
+@media screen  and (max-width:360px) {
+  #navbar{
+    z-index:2;
+   float:left;
+   position:relative;
+  
+}
+
+#navbar img{
+ width:250px;
+position:relative;
+
+}
+
+/* .main-section{
+    
+  margin-left:20%;
+  float:none;
+
+    
+} */
+#clip1, #clip2, #clip3, #clip4, #clip5{
+     
+  position: relative;
+ left: -30px;
+ bottom: -60px;
+ z-index: 2
+ 
+   
+ }
+  
+}
+
+
+
+
+/* regular screens */
+@media screen and (max-width:1000px) 
+  {
+  #navbar{
+       z-index:2;
+      float:left;
+      position:relative;
+      margin:0;
+  }
+  #pane{
+    position:fixed;
+  
+  }
+  #navbar img{
+   max-width:175px;
+  position:relative;
+  margin:0;
+  }
+  /* .main-section{
+      
+    margin-left:20%;
+    float:none;
+
+      
+  } */
+  #clip1, #clip2, #clip3, #clip4, #clip5{
+     
+    position: relative;
+   left: -30px;
+   bottom: -60px;
+   z-index: 2
+   
+     
+   }
+   }

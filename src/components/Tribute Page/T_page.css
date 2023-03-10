@@ -1,0 +1,605 @@
+*{ box-sizing: border-box;
+     display: inline-grid;  
+    
+    
+    
+   
+} 
+
+/*  the entire page layout is an inline */
+/* id for the body and the background in it */
+#background{
+     background: linear-gradient(45deg, transparent, mediumslateblue,transparent);
+     /* background-repeat: no-repeat; */
+     background-size: cover;    
+     width:100%;
+     height:100%;
+}
+/* the body and the background of the page */
+
+
+/* The entire page is centered for cellphones */
+main{
+    margin:auto;
+    height:auto;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-family:'papyrus'
+}
+#zoom-in{
+    width:100%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-iteration-count: infininte;
+    animation-direction:normal;
+    animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    /* animation-delay: 1s; */
+}
+@keyframes zoom{
+    0%{
+        transform: scale(-0.2);
+
+    }
+
+90%{
+    transform: rotate(340deg);
+} 
+
+95%{
+    transform: rotate(340deg);
+}
+  98%{
+      transform: rotate(350deg);
+     
+  }  
+    100%{
+        transform:scale(1.0);
+    }
+}
+#top{
+    background-image:url(./palmtrees.jpg);
+    background-size:cover;
+    animation-name:intro-pan;
+    animation-duration:25s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width:100%;
+    height:160px;
+    padding:20px;
+    margin-top:-2%;
+    border: 5px solid black;
+    box-shadow: 5px 20px 17px blueviolet;
+    text-align: center;
+    color:blueviolet;
+   
+    
+}
+
+@keyframes intro-pan {
+    from{ background-position: top;}
+   to{background-position: bottom;}
+
+    
+   
+}
+/* Glowing welcoming Logo */
+
+/* begining of the thumbnail section */
+.thumbnail{
+  
+  border-radius: 4px;
+  padding: 36px;
+  width:350px;
+  height:300px;
+  position:absolute;
+  margin:10%;
+  margin-left:10%;
+  top: 0;
+  left:-205px;
+  
+}
+.thumbnail img{
+    border: 5px ridge #ccc;
+    box-shadow:-6px 10px 13px blueviolet;
+}
+
+
+/* thumbnail display on side of the page */
+
+/* the navbar section */
+
+.triblogo{
+    text-align:center;
+    padding: 30px;
+    margin:auto;
+    width:98%;
+    height:auto;
+    
+    
+}
+
+
+/*  */
+
+   /*Welcome picture with nav links tied to it */
+   nav{
+       position: relative;
+   }
+#navbar{
+    font-size: 45px;
+    margin-top:-38%;
+     position: relative; 
+    top: 523px;
+    right: 19px;
+    width:525px;
+
+}
+li{
+    
+     display: inline; 
+}
+a{
+    color:blueviolet
+}
+ a:hover{
+   color:cyan;
+} 
+                                              
+/* nav bar set in the middle of the beach image */
+
+
+/* The Glowing effect of the lettering at the top of the page */
+.glow{
+    font-size: 45px;
+    color: #ffff;
+    text-align: center;
+    animation: glow 5s ease-out infinite alternate;
+    animation-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.96);
+}
+.p_glow{
+    font-size: 40px;
+    color: #ffff;
+    text-align: center;
+    animation: p_glow 3s ease-in-out infinite alternate;}
+    
+
+
+@keyframes glow {
+  
+    from {
+        text-shadow: 0 0 10px #6bd5f5, 0 0 20px #6bd5f5, 0 0 30px , 0 0 40px #3583e9, 0 0 50px #3538e9;
+      }
+      
+      to {
+        text-shadow:/* 0 0 20px #fff*/ 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 30px blueviolet, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue;
+      }
+
+}
+
+@keyframes p_glow {
+  
+    from {
+        text-shadow: 0 0 10px #f5756b, 0 0 20px #f5756b, 0 0 30px , 0 0 40px #e93590, 0 0 50px #e93590;
+      }
+      
+      to {
+        text-shadow:/* 0 0 20px #fff*/ 0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 30px blueviolet, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue;
+      }
+    }
+/*  The !st section on the page with history information */
+
+.history{ 
+    width:56vw;
+    height:auto;
+    position:relative;
+    background-image: url(./images/backdrop.png);
+    margin-top: 10%;
+    float:left;
+    box-shadow:15px 10px 45px black;
+    border-style: solid;
+    border-color:plum;
+    border-width: thick;
+}
+#info1{
+    background:linear-gradient(45deg, transparent, mediumslateblue,transparent);
+    margin: 2% 10% 2% 10%;
+    padding:30px; 
+    width:auto;  
+    border-width:thin;
+    height:auto;
+    position: relative;}
+
+
+#tribute-link img{
+    position:inherit;
+    margin:auto;
+    border:1px solid plum;
+    box-shadow:15px 2px 15px black;
+    }
+
+
+/* first div with image and info about miami */
+
+/*  the begining of the middle floating images */
+.mid{
+    /* top:-142px; */
+    margin:-5%;
+    border: 5px ridge #ccc;
+    position:relative;
+    left:-36%;
+    bottom:159px; 
+    width: 400px;
+    border-radius: 50px;
+    box-shadow: 15px 2px 20px black;
+    color:white;
+   
+}
+
+.mid img{
+    border-radius:50px 50px 0px 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    /* animation-name: small-pan;
+    animation-duration:10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+}  
+   
+
+
+.tag{
+    padding: 15px;
+    text-align: center;
+}
+ #small{
+     background-image: url(./images/Miami/pexels-antonio-cuellar-4366061.jpg);
+     height:300px;
+     width:300px;
+     background-size: cover;
+     animation-name: small-pan;
+     animation-duration:15s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ } 
+
+ #small2{
+    background-image: url(./images/Miami/pexels-elvis-vasquez-421654.jpg);
+    background-position-y: top;
+    height:300px;
+    width:690px;
+    background-size: cover;
+    animation-name: small-pan2;
+    animation-duration:20s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+ #small3{
+    background-image: url(./images/Miami/pexels-jimmy-chan-1458457.jpg);
+    height:300px;
+    width:300px;
+    background-size: cover;
+    animation-name: small-pan;
+    animation-duration:20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+ }
+ @keyframes small-pan2{
+    from{ background-position:top ;}
+    to{ background-position:bottom ;}
+
+ }
+ @keyframes small-pan{
+    from{ background-position:top left;}
+    to{ background-position:bottom right;}
+
+}
+/* images that float in the middle of the page */
+
+/* The 2nd of the Articles */
+.additional{
+    background-image:url(./images/backdrop.png);
+    float:left;
+    box-shadow:15px 10px 45px black;
+    border-style: solid;
+    border-color: plum;
+    border-width: thick;
+    height:auto;
+    position: relative;
+    margin-top: -60%;
+    width:56vw;
+}
+#info3{
+    background:linear-gradient(45deg, transparent, mediumslateblue,transparent);
+    padding: 30px;
+    height: auto;
+    width:auto;
+    position:relative;
+    top:-138px;
+    border-width:thin;
+    margin: -60% 0% 2% 0%;
+    z-index:2;
+}
+#img-div{
+    margin:auto;
+    width:100%;
+    height:auto;
+    position:relative;
+}
+#image{
+    max-width:100%;
+    position:relative;
+    height:inherit;
+    display: block;
+    margin: auto;
+}
+.gallery1{
+    
+    z-index:2;
+    float:left;
+    
+}
+.gallery2{
+    float:right;
+    z-index:1;
+   
+}
+
+/* 2nd div with photo galery for beaches and info */
+
+/* /The 3rd div with information on attractions */
+.ammenities{
+    position:relative;
+    background:url(./images/backdrop.png);
+    margin-top:10%;
+    float:left;
+    box-shadow:15px 10px 45px black;
+    border-style: solid;
+    border-color: plum;
+    border-width: thick;
+    height:auto;
+    width:56vw;
+
+}
+
+#gallery{
+    
+    text-align:center;
+    background:linear-gradient(45deg, transparent, mediumslateblue,transparent);
+    padding: 30px;
+    margin: 2% 10% 2% 10%;
+    height: auto;
+    width:auto;
+    border-width:thin;
+    position: relative;
+    bottom:202%;
+    
+}
+
+
+
+#img3, #img4{
+    
+    border: 5px ridge #ccc;
+    box-shadow:15px 10px 45px white;
+
+}
+#img1, #img2{
+    border: 5px ridge #ccc;
+    float:right;
+    box-shadow:15px 10px 45px white;
+}
+
+/* end of section */
+
+/* falling diamonds */
+.diamonds{
+     z-index:-2; 
+    position: fixed;
+    animation-name: skyfall;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+   
+}
+#d1{
+    animation-timing-function: cubic-bezier(0, 0.55, 0.795, 0.1);
+    left:5%;
+}
+
+#d2{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    left:9%;
+    animation-delay: 2s;
+    animation-duration: 10s;
+
+
+}
+#d5{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    left:13%;
+    animation-delay: 3s;
+    
+}
+#d4{
+     animation-timing-function: cubic-bezier(0, 0.56, 0.795, 0.1);
+    animation-duration: 10s;
+    right:2%;animation-delay: 2s;
+}
+#d5{animation-timing-function: cubic-bezier(0.57, 0.085, 0.68, 0.53);
+    right:7%;
+    animation-delay: 1.2s;
+    animation-duration: 13s;
+
+}
+#d6{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    right:13%;animation-delay: 3s;
+
+}
+#d7{animation-timing-function: cubic-bezier(0.58, 0.085, 0.68, 0.53);
+    left:40%;
+    animation-delay: 1s;
+    animation-duration: 14s;
+
+    
+}
+#d8{ animation-timing-function: cubic-bezier(0.55, 0, 0.795, 0.1);
+    left:33%;
+    animation-delay: 3s;
+    animation-duration: s;
+
+}
+#d9{ animation-timing-function: cubic-bezier(0, 0.35, 0.795, 0.1);
+    right:39%;
+    animation-delay: 1.5s;
+}
+#d10{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    right:28%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+#d11{animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    left:19%;
+    animation-delay: 1s;
+}
+@keyframes skyfall{
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: 800px;
+    }
+  }
+#end{
+    background-image:url(./images/backdrop.png);
+    padding:35px;
+    position:relative;
+    bottom:-59px;
+    color:antiquewhite;
+    font-size: 20px;
+    
+
+}
+
+
+footer img{
+    border-radius: 20px;
+}
+
+#tribute-end{
+    position:relative;
+    margin :auto;
+}
+
+/* footer with miami logo */
+@media screen and (max-width:1000px) {
+    /* #info3{
+        background: linear-gradient(45deg, transparent, mediumslateblue,transparent);
+    padding: 30px;
+    height: 74vh;
+    width: auto;
+    position: relative;
+    top: -138px;
+    border-width: thin;
+    margin: -44% 0% 2% 0%;
+    z-index: 2
+    } */
+    /* I dont know how to ADJUST THIS CORRECTLY */
+    .triblogo{
+        margin-left:auto;
+    }
+    a{
+        font-size:25px;
+    }
+    *{ 
+        font-size:25px;
+        margin:auto;
+        display:flexbox ;
+   }
+   header{
+       font-size: 20px;
+   }
+   p{
+       font-size: 16px;
+   }
+   #navbar{
+    font-size: 10px;
+    margin-top:-38%;
+     position: relative; 
+    top: 523px;
+    right: 19px;
+    width:225px;
+
+}
+#flow-1{
+/* display:inline-flexbox; */
+margin: -502% 0% 0% -142%;
+bottom:593px;
+}
+#flow-2{
+/* display:inline-flexbox; */
+margin: -201% 0% 0% -162%;
+}
+#flow-3{
+/* display: inline-flexbox; */
+margin:-96% 0% 0% -135%;
+
+}
+li{
+    
+    display: inline-flex; 
+  
+}
+a{font-size: 12px;
+   color:blueviolet;
+   display:inline-flex;
+   flex-shrink: 12px;
+   position: relative;
+}
+a:hover{
+  color:cyan;
+} 
+#background{
+    position: relative;
+}
+
+.thumbnail{
+    margin:8vmax;
+    top:78px;
+    left:-120px;
+}
+img{
+    display:flexbox;
+    flex-shrink: 100px;
+    flex-direction: column;
+}}
+
+@media screen and (max-height:600px) {
+    .triblogo{
+        margin-left:auto;
+    }
+    a{
+        font-size:12px;
+    }
+    *{ 
+        font-size:25px;
+        margin:auto;
+   }
+   header{
+    font-size: 20px;
+}
+   p{
+    font-size: 16px;
+}
+img{
+    display:flexbox;
+    flex-shrink: 100px;
+    flex-direction: column;
+}
+}
+    

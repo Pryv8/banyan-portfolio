@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="./main-page.html">
+</head>
+<style>
+    @media screen and (max-width:680px){
+    .container{
+        display:inline-flex;
+        flex-flow:column wrap ;
+        
+    }
+    .container li{
+        font-size: 18px;
+    }
+    .container h1{
+        font-size: 25px;
+    }
+        video{
+            display:inline-flex;
+             width:250px; 
+          position: relative;
+          left:-43px;
+        }
+        fieldset, form {
+            width:250px;
+            display:inline-flex;
+            margin-left:2%;
+            flex-wrap: wrap;
+            line-height: .70;
+        }
+        label, input{
+            height:20px;
+            padding:5px;
+            width:250px;
+            margin-left:2%;
+            flex-wrap: wrap;
+            line-break: auto;
+        }
+        #submit{
+            position: relative;
+            top:20px;
+        }
+        #video-text{
+            position: relative;
+           top:-113px;
+           left:-12px;
+           font-size: 18px;
+        }
+     #login h3, h4{
+         margin-top:16%;
+         font-size: 20px;
+     }
+    
+}
+@media screen and (max-height:600px){
+    footer{
+        height:5%;
+    }
+}
+</style>
+
+<!-- # User Stories
+
+User Story #1: My product landing page should have a header element with a corresponding id="header".
+
+User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+
+User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+
+User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+
+User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+
+User Story #6: I can watch an embedded product video with id="video".
+
+User Story #7: My landing page has a form element with a corresponding id="form".
+
+User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+
+User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+
+User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+
+User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+
+User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
+
+User Story #13: The navbar should always be at the top of the viewport.
+
+User Story #14: My product landing page should have at least one media query.
+
+User Story #15: My product landing page should utilize CSS flexbox at least once. -->
+<body>
+    <header id="header">
+        <img id="header-img" src="https://www.w3schools.com/w3css/img_temp_startup.jpg" width="200" height="100" alt="logo" style="margin-left:11%;">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#login">Login</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#contact">Contact</a>
+         </nav>
+        
+    </header>
+
+    <!-- header for the site REQUIRED TO BE AT THE TOP OF THE VIEWPORT AT ALL TIMES -->
+    <main>
+  
+        <section id="login">
+            
+                <h3> Creativity is valued @ "Songs 2 Buy". </h3>
+                    <h4 style="font-size:25px;">Create, Post, & become Known</h4>
+            <fieldset>
+            <form id="form" action="http//:www.freecodecamp.com/email-submit">
+                 
+                    <label for="name">Name</label>
+                        <input type="text" id="name" name="f-name" placeholder="Enter Full Name here"><br>
+                            <label  for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter Email here" required><br><br>
+                   
+                                
+                    
+                    
+                    <input type="submit" id="submit" value="Get Started" >
+             </form>
+            </fieldset>
+        </section>
+        <br>
+<!-- form for the site -->
+
+    <video class="video-space" id="video" width="500" height="auto" method="play" autoplay muted loop >
+        <source src="../video/Pexels Videos 1851190.mp4"  type="video/mp4">
+    </video>
+    <p class="video-space" id="video-text">YOUR "CONTENT" <br>
+    MAKES THE "CONTINENT"</p>
+
+<!-- video image -->
+
+
+<header id="content">Services</header>
+            <section id="services">
+                <div class="container">
+                    <div id="plat">
+                         <h1>Platinum Package</h1>
+             
+                             <li>$299.99/month w/3 month Premium</li>
+                                <li>$3750.00/Annually</li>
+                             Unlimited : 
+                                    <li> Content</li>
+                                         <li> Loops</li>
+                                             <li>Beats </li> 
+                                                <li>All Access Personal Profile</li>
+                                                 <li> Access to all Networking events </li>
+                                                 <button class="btn">
+                                                    <a href="./main-page.html" target="_blank" >
+                                                   SELECT</a></button>
+                                
+                
+            </div>
+                 <div id="go">
+                     <h1>Gold Package</h1>
+                
+                             <li>$199.99/month</li>
+                             <li>$2200.00/ Annually</li>
+                             Unlimited:
+                             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                  Repellendus consectetur totam at, quaerat sed non?</li>
+
+                             <button class="btn">
+                                <a href="./main-page.html" target="_blank" >
+                               SELECT</a></button>
+            </div>
+
+                 <div id="sil">
+                     <h1>Silver Package</h1>
+              
+                             <li>$89.99/month</li>
+                             <li>$1050.00/Annually</li>
+                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                 Repellat perferendis fugiat in officiis cum architecto!</li>
+                             <button class="btn">
+                                 <a href="./main-page.html" target="_blank" >
+                                SELECT</a></button>
+            </div>
+
+
+            <div id="about">
+                <h1>Discounts</h1>
+                     We value all of our customers                 
+                        <li><u> Veterans:</u> 10% off of Annual contracts</li>
+                             <li> <u> New Customers:</u> 5% off of any 3 month Premiuim on any package chosen</li>
+                                 <li> <u> Renewals:</u> $150.00 off of all renewals no matter the package</li>
+                </div>
+        </div>
+    </section>
+    </main>
+
+<footer >
+    <section id="contact">
+    <div class="container" >
+        <div id="contact-privacy"><a href="#"> Privacy</a></div>
+        <div id="contact-terms"><a href="#"> Terms</a></div>
+        <div id="contact-contact"><a href="../Contact page/contact.html"> Contact</a></div>
+        
+       
+    </div>
+    <p>Copyright 2022, Songs 2 Buy</p>
+</section>
+</footer>
+<script src="pcc-userstory-tests.js"></script>
+</body>
+</html>

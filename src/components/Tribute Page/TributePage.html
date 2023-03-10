@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="./T_page.css">
+</head>
+<body id="background">
+
+     <!-- User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements. 
+    User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+    User Story #3: I should see a div element with a corresponding id="img-div". 
+    User Story #4: Within the img-div element, I should see an img element with a corresponding id="image". 
+    User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div. 
+    User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page. 
+    User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. 
+    HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank"). 
+    User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+    User Story #9: The img element should be centered within its parent element. -->
+
+    <header id="top">
+       <div id="zoom-in"> <h1 style="margin-top:-1%;
+        margin-left:18%;
+            letter-spacing:216px;
+            font-size:80px; 
+            font-weight:bolder; 
+            font-family:wide latin;
+            color: rgb(218, 203, 235);
+            text-shadow:0 0 10px blueviolet, 0 0 20px blueviolet, 0 0 30px blue, 0 0 40px blue"> Miami </h1>
+            </div>
+            <br>
+                                    <!-- Miami logo and title of page -->
+
+                <h3 class="p_glow" id="title" style="margin-top:-4%;margin-left:6%;">Welcome to the South Beach Experience</h3>
+
+                                     <!-- sub-header for the page and moto -->
+
+    </header>
+                                     <!--the id="top" is complete and the layout is complimentary to one another  -->
+            <br>
+                                    <!-- faliing diamonds in the background sizes and speeds vary -->
+
+                                <div class="diamonds" id="d2" style='font-size:45px;opacity:0.6'>&#128142;</div>
+                                <div class="diamonds" id="d3" style='font-size:35px;opacity:0.5'>&#128142;</div>
+                                <div class="diamonds" id="d4" style='font-size:45px;opacity:0.5'>&#128142;</div>
+                                <div class="diamonds" id="d5" style='font-size:15px;opacity:0.3'>&#128142;</div>
+                                <div class="diamonds" id="d6" style='font-size:35px;opacity:0.5'>&#128142;</div>
+                                <div class="diamonds" id="d7" style='font-size:45px;opacity:0.6'>&#128142;</div>
+                                <div class="diamonds" id="d8" style='font-size:45px;opacity:0.3'>&#128142;</div>
+                                <div class="diamonds" id="d9" style='font-size:25px;opacity:0.6'>&#128142;</div>
+                                <div class="diamonds" id="d10" style='font-size:15px;opacity:0.5'>&#128142;</div>
+                                <div class="diamonds" id="d11" style='font-size:25px;opacity:0.2'>&#128142;</div>
+
+                                <!-- End of diamond div's -->
+
+                                <!-- thumbnail photo's of the city that sits adjacent to the logo: note:needs borders that are plum -->
+    <div class="thumbnail">
+        <img  src="./images/Miami/pexels-elvis-vasquez-421655.jpg" alt="biscaine" width="100%">
+        <br>
+            <img  src="./hotel.jpg" alt="hotel" width="100%">
+        <br>
+                <img   src="./images/Miami/pexels-antonio-cuellar-4366061.jpg" alt="ocenside" width="100%">
+        <br>
+                    <img  src="./images/Miami/pexels-mylo-kaye-11094897.jpg" alt="the beach" width="100%">
+        <br>
+                        <img  src="./images/Miami/pexels-gagan-cambow-12608933.jpg" alt="fairgrounds" width="100%">
+
+    </div>
+
+                                <!--pictures sit on left hand side of the page subject to change  -->
+
+                                <!-- main section of page needs to sit relative in the grid display -->
+<main >
+    <div  class="triblogo"> 
+        <div id="main">
+           <h1 class="glow" style="color:black">The Destination that offers<u style="line-height:100px;">NOTHING LESS</u>than <strong>Opulence</strong> </h1> 
+
+                                <!-- navbar sits nested inside of image for a different themed affect 0 -->
+
+                <img src="./images/Miami/pexels-rio-silverio-gonzalez-11630066.jpg" alt=" Florida OceanSide" width="auto" height="300" style="width:100%;box-shadow: -8px 0px 25px 12px mediumpurple;border-style: groove;border-color: plum;position:relative;right: 6px;">
+                     <nav>
+                            <ol id="navbar" style="height:fit-content">
+                                <li><a class="glow" href="#history1" id="flow-1" style="float:left;position:relative;right:12px;margin-top: -91%;">History</a></li>
+                                    <li><a class="glow" href="#destinations" id="flow-2" style="position: relative;left: 193px;top:-390px">Culture</a></li>
+                                        <li><a class="glow" href="#locations" id="flow-3" style="float:right;position: relative;left: 409px;top: -360px;">Attractions</a></li>
+                            </ol>
+                    </nav>
+         </div>
+    </div>
+                                <!-- End of navbar -->
+    
+                            
+    <div class="history">
+        <h1 id="history1"  style="font-size:35px; background-color: hsl(-76, 55%, 71%);margin-left: 20px;margin-right: 20px;text-align: center;"> History</h1>
+
+        <div id="info" >
+                <section class="history" id="info1">
+                    <p id="tribute-info">
+                   <strong>
+                   The "Real" History
+                </strong>
+                   Tequesta Indians lived in what is now the Miami area long before white settlers first arrived. In 1567 A spanish mission was built. An attempt by businessmen to start a coconut plantation
+                   failed in the 1800's. But John S. Colins, one of the businessmen, pioneered in developing the resort city. Other city founders include Carl G. Fisher, Thomas J. Pancoast, andJohn N. Lummus. 
+                   In 1895, Julia D tuttle, a Florida pioneer, 
+                   convinced railroad builder Henry M. Flagler that the area could become rich farmland. She sent hi some flowers to show that the land had extended the
+                    Florida East Coast Railroad
+                    to the area in exchange for land.That same year, Miami was founded and recieved a city charter. about 1,500 people lived there. The railroad helped Miami's
+                     population reach 5,000 by 1910 and 30,000 by 1920.
+                     In 1912, Rock and sand were pumped from the bottom of Biscaine Bay and spread over Mangrove roots and soft sand to crate the modern city. Miami Beach was incorporated
+                     as a town in 1915. It was incorporated as a city in 1917.
+                     <p>
+                         During the early 1920's, a great real estate boom centered in Miami. People made and lost fortunes with the construction of homes, hotels, and resorts. 
+                         Just as the boom began to decline in 1926, a destructive hurricane struck the city. Another severe storm hit in 1928. Even so, Miami's popopluaton reached 110,000 by 1930.
+                         After the United States entered WWII in 1941, Miami served as an important military training center. The armed servicex used most of the cities hotels as barracks.
+                         Many service personnel settled in Miami after the war ended in 1945.                    
+                        </p>
+                        <p>
+                            After Fidel Castro became dictator of cuba in 1959, hundreds of thousands of Cubans fled to Miami, approx. 200 miles away.
+                             In the late 1970's many refugees in Haiti also began settling in the Miami area. In 1973, Maurice Ferre took office as Miami's mayor,
+                             becoming the firt Hispanic mayor of a large U.S. city. Ferre, who was born in Puerto rico, served as Mayor unitl 1985. That year, he lost a bid for reelection to Xavier L. Suarez,
+                             who became the city's first Cuban-born mayor. Suarez held the office until 1993.  
+                            </p> 
+                                        
+                                            <p>
+                                                In 1980, racial tension erupted into violence after 4 white former county policemen were found not guilty of killing a black Miami businessman. Several
+                                                other such incidents caused similar unrest during the 1980's and early 1990's. In the mid-1980's, many new buildings rose in Miaimi. A rapid transit system, Metrorail
+                                                began oprerating in 1984. Metromover, a downtown monorail line, was added in 1986.
+                                            </p>
+
+                    </p>
+                               
+
+                               
+                                     
+                </section>
+        </div>
+     </div>
+
+                    <br>
+
+
+<div class="mid" id="small">
+    
+            <!-- <img src="./images/Miami/pexels-antonio-cuellar-4366061.jpg" alt="MiamiView" width="300" height="400"> -->
+                <div class="tag">Come and View Beautiful Beaches</div>
+    </div>
+
+<div class="mid" id="small2" style="left:25%;top:-6%;margin-bottom: 20%;">
+             <!-- <img src="./images/Miami/pexels-elvis-vasquez-421654.jpg" alt="nightvision" width="200" height="200"> -->
+                 <div class="tag">The NightLife Attracts everyone</div>
+    </div>
+
+ <div class="mid" id="small3" style="left:115%;top:-179%;margin-bottom: 19%;">
+        <!-- <img src="./images/Miami/pexels-jimmy-chan-1458457.jpg" alt="downtown" width="200" height="300"> -->
+                 <div class="tag">Home of the dolphins</div>
+     </div>
+
+     
+
+     
+    <div class="additional">
+        <h1 id="destinations" style="font-size:35px; background-color: hsl(-76, 55%, 71%);margin-left: 20px;margin-right: 20px;text-align: center;">Culture</h1>
+           <div  id="img-div" >
+            <figcaption id="img-caption" style="font-size:35px;">Miami's Finest Beaches</figcaption>
+                 <img  id="image" src="./images/Miami/pexels-nextvoyage-2225499.jpg" height="100%" alt="resort"  > 
+        
+                <article class="additional" id="info3">         <!-- insert transparent background into section     -->
+                     
+                         <p><strong>Cultural Life</strong>
+                        Miami has an opera company and several art galleries, dance companies, and theaters. The downtown Miami-Dade Cultural Center houses the main library. the Miami Art Museum
+                         and the Historical Museum of Southern Florida. Other points of interest in the Miami area include Fairchild Tropical Botanic Garden, Lowe art Museum,
+                            Metrozoo, the Seaquarium, and Vizcaya Musuem and Gardens.</p>
+
+                                    <p>Many visitors come to the Miami area for the Orange Bowl football game on or near New Year's Day. the metropolitan area is also the
+                                         home of the Miami Dolphins of the National football
+                                        League, the Florida Marlins National League baseball team, the Miami Heat of the National Basketball Association,
+                                         and the Florida Panthers of the National Hockey League.
+
+                                    </p>
+
+                                         <p> To see into a window of your 1-0f-a-kind experience: Click
+                                        <a id="tribute-link" href="./testsite.html" target="_blank">
+                                           <img src="./images/Miami/florida.png" alt="State o/Florida" width="300" height="200">
+                                              </a>
+                                          </p>
+                                       
+                </div>
+        
+                         <img src="./images/beach3.jpg" alt="beach" width="300" height="250" style="top: -81px;
+                         position: relative;
+                         border-radius: 50px;
+                         margin-left: 5%;
+                         box-shadow: 10px 0px 50px 15px pink;
+                         border: 5px ridge #ccc;
+                         max-width:100%"  >
+                 <!-- TWO FLOATING IMAGES THAT REST INSIDE OF THE ADDITIONAL SECTION -->
+                    <img  src="./images/ocean2.jpg" alt="oceanview"  width="300" height="250" style="left:22vw;
+                    margin-top:-31%;
+                    top:0;
+                     position: relative;
+                     border-radius: 50px;
+                    max-width: 100%;
+                    box-shadow: 10px 0px 50px 15px pink;
+                    border: 5px ridge #ccc" >
+        
+             </article>
+        </div>
+    
+
+
+
+    <div class="ammenities">
+         
+           
+                    <h1 id="locations" style="font-size:35px; background-color: hsl(-76, 55%, 71%);margin-left: 20px;margin-right: 20px;text-align: center;"> 
+                        Luxury Dining + Upscale Relaxation= Excellence                         
+                    </h1>                    
+                        <br>
+                        <div class="gallery2"> 
+                             <img id="img3" src="./images/room_deluxe.jpg" alt="spa" width="300" height="250"  style="border-radius:50%;">
+                             <img id="img4" src="./images/pexels-thorsten-technoman-338504.jpg" alt="resortscene" width="300" height="250" style=" border-radius:50%; margin-left:auto;">
+                </div>
+
+                <br>
+
+                <div class="gallery1">
+                    <img id="img2" src="./images/salmon.jpg" alt="salmonONplate" width="300" height="250" style="border-radius:50%; margin-left:92%;">
+                    <img id="img1" src="./images/steak.jpg" alt="steakONplate" width="300" height="250" style=" border-radius:50%; margin-left:74%;">
+                </div>
+
+
+                <div id="photos1" style="height:141px">
+
+        <article  class="ammenities" id="gallery">
+            <h1>Luxury Dining</h1>
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                             Quas temporibus delectus tenetur quia expedita, quo blanditiis deserunt quod nulla, 
+                                 possimus incidunt officiis, harum alias eum voluptates! Quisquam quasi qui saepe.</p>
+                   
+                 <h2>Relaxing Resorts</h2>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ex at sequi consequatur rerum eum exercitationem aut facilis, 
+                                maxime quisquam ab explicabo alias porro libero fuga?
+                     </p>
+            </article>
+        </div>
+    </div>
+</main>
+<br>
+<br>
+<br>
+<br>
+
+
+<footer id="end">
+    <div id="tribute-end">
+        <img src="./images/5.jpg" alt="Flower picture" width="250" height="100"> Miami's Finest
+    <h4>To find out more contact</h4>
+    <address >
+        Princess Gilmore
+        <br>
+        Sr2fyd@gmail.com
+        <br>
+        (352)777-7777
+
+    </address>
+</div>
+    </footer>
+
+   
+                
+ <script src="pcc-userstory-tests.js"></script>
+
+</body>
+</html>

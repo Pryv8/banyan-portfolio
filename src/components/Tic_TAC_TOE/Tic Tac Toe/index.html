@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+
+
+
+
+
+</head>
+
+<body class="w3-content" style="max-width:800px">
+    <div class="w3-container w3-card">
+
+        <h1 class="w3-center w3-red" id="topic">Tic Tac Toe 
+            <p class="w3-medium">2022 edition</p>
+        </h1>
+
+        <h2 class="w3-center w3-black" id="message">Hello</h2>
+
+
+
+
+        <!-- button bar for start and restart buttons -->
+
+        <div class="w3-bar w3-red">
+            <button class="w3-btn  w3-left" id="startBtn"
+                onclick="document.getElementById('info').style.display ='block'">START</button>
+            <button class="w3-btn  w3-right" id="reload" type="submit" onclick="location.reload()">
+                RESTART</button>
+        </div>
+
+
+        <ul class="w3-ul">
+            <li>
+                <h3 id="player1Slot"> Player 1:</h3>
+            </li>
+
+            <li >
+                <h3 id="player2Slot"> Player 2:</h3>
+             </li>
+        </ul>
+
+
+        <!-- modal box for the game for player input -->
+        <div class="w3-container">
+            <div class="w3-modal" id="info">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:400px">
+                    <div class="w3-container w3-red"><h2>Enter your name</h2></div>
+                    <span onclick="document.getElementById('info').style.display='none'"
+                        class="w3-button w3-hover-black w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+
+                    <!-- Player 1 -->
+                    <form id="playerNames" name="playerNames">
+                        <input type="text" name="Player1" id="player1" placeholder="Player 1">
+                        <input type="text" name="Player1letter" id="player1Letter" placeholder=" X or O" style="width:100px">
+                    </br>
+                        <!-- Player 2 -->
+                        <input type="text" name="Player2" id="player2" placeholder="Player 2">
+                        <input type="text" name="Player2letter" id="player2Letter" placeholder=" X or O" style="width:100px">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="game-board">
+            <button class="btn" onclick="nextPlay('top-left')">
+                <div class="box" id="top-left" name="top-left"></div>
+            </button>
+            <button class="btn" value="top-mid" onclick="nextPlay('top-mid')">
+                <div class="box" id="top-mid"></div>
+            </button>
+            <button class="btn" value="top-right" onclick="nextPlay('top-right')">
+                <div class="box" id="top-right"></div>
+            </button>
+            <button class="btn" value="mid-left" onclick="nextPlay('mid-left')">
+                <div class="box" id="mid-left"></div>
+            </button>
+            <button class="btn" value="mid-mid" onclick="nextPlay('mid-mid')">
+                <div class="box" id="mid-mid"></div>
+            </button>
+            <button class="btn" value="mid-right" onclick="nextPlay('mid-right')">
+                <div class="box" id="mid-right"></div>
+            </button>
+            <button class="btn" value="bottom-left" onclick="nextPlay('bottom-left')">
+                <div class="box" id="bottom-left"></div>
+            </button>
+            <button class="btn" value="bottom-mid" onclick="nextPlay('bottom-mid')">
+                <div class="box" id="bottom-mid"></div>
+            </button>
+            <button class="btn" value="bottom-right" onclick="nextPlay('bottom-right')">
+                <div class="box" id="bottom-right"></div>
+            </button>
+        </div>
+
+    </div>
+
+
+    <script type="text/javavscript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="./scripts/app.js"></script>
+</body>
+
+
+
+</html>

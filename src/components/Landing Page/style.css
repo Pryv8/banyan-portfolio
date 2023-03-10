@@ -1,0 +1,16 @@
+@media screeen and (min-width:360px){
+*{box-sizing: border-box;
+    background-color:#777;}
+}
+
+@media screen and ( max-height:600px){
+  * {box-sizing: border-box;
+    background-color: #777;
+
+}}
+
+@media  screen and (max-width:1240px){
+    *{box-sizing: border-box;
+    background-color: #777;}
+    
+}

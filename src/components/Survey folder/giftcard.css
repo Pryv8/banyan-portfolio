@@ -1,0 +1,31 @@
+
+
+#gc {
+    font-size: 45px;
+    font: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 60px;
+    background-color: #777;
+    color:orange;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+
+
+#next2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.center {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    
+    font-size: 30px;
+}
+#fill{
+    font-size:20px;
+    
+}

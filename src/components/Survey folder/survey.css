@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    background-image:url(./img/pexels-negative-space-160107.jpg);
+    /* opacity:0.8; */
+    background-color: #777;
+    background-size: cover;
+
+
+}
+                                                                 /* background image set for page */
+
+
+
+
+
+header {
+    background-color:transparent;
+    text-align: center;
+    padding: 10px;
+    color: azure;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size: 75px;
+    
+
+}   
+#title{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+}
+                                                                /* header and title for the survey */
+
+
+
+.center{ 
+    height: 100%;
+    width: 260px;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+     overflow-x: hidden; 
+   color: aliceblue;
+   /* display:inline-grid; */
+    justify-items:start;
+   align-items: baseline;
+   justify-content: center;
+   font-size: 25px;
+}
+#description {
+    /* i need font and sizing of text and alignment to adjust*/
+    text-align: center;
+    color: blueviolet;
+    padding: 30px;
+    margin-left: 45px;
+    margin-right:60px;
+      
+}
+                                                                    /*the side bar and its contents  */
+.sec2{
+    margin:20px 185px;
+
+}
+#setaside{
+    background-image: url(./img/LITTLEGUY.jpg);
+        background-position: center;
+        background-size: contain;
+        padding: 20px;
+       box-shadow: 10px 25px 25px rebeccapurple;
+       height:15px;
+}
+   
+
+ #survey-form{  
+     font-size: 25px;
+    padding: 60px;
+    border-style: outset;
+    background-color: black;opacity:0.7;   
+    border-color: rgb(122, 122, 122);
+    border-width: 12px;
+  display:inline-grid;
+  justify-items:start;
+ align-items: baseline;
+ justify-content: center;
+                                                                    
+                                                                                                                               
+}
+
+   
+
+
+
+#mister, #miss, #missus{
+    font: bold;
+    padding:15px;
+    
+    
+}
+
+
+#name, #lastname 
+{ 
+    padding:5px;
+    width:70%;
+    margin:15px;
+} 
+
+#email{
+    padding:5px;
+    width:70%;
+    margin:15px;
+    margin-right: -33px;
+
+}
+#number{
+    padding:5px;
+    width:70%;
+    margin:15px;
+    width:14%;
+    position: relative;
+    left: -327px;
+
+
+}
+
+
+                                                        /* the information for the name, email, and age */
+
+ 
+     p{
+         font-size: 25px;
+     } 
+     #opt2{
+        text-align: left;
+        padding:30px;
+        background-color: snow;
+        border-style: inset;
+        border-width: 15px;
+        border-color: darkgrey;
+        
+     }       
+     
+     
+#options-label {/*This is my credit card preference area*/
+    font-size: 25px;
+    font-style: italic;
+    text-align: left;
+    display: block;
+    text-decoration: underline;
+}
+
+
+
+#Q1{  
+    text-align: left;
+    
+}
+#Q2{ 
+    
+    text-align: left;
+    
+}
+
+#opt{
+    text-align: center;
+
+}
+#comments{
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+
+
+#message{
+    background-image: url(./img/master-card-g9039209fa_1920.png) w;
+}
+
+
+
+
+
+

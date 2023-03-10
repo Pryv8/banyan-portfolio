@@ -1,0 +1,60 @@
+header{
+    color:black;
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
+}
+.flex{
+    display:flex;
+    flex-direction: row;
+    /* border:2px solid red; */
+    width:50%;
+    height:250px;
+    margin:auto;
+    justify-content:center;
+   
+}
+#profile{
+    width:25%;
+    height:50%;
+    /* border: 2px solid red; */
+    margin: auto;
+    border-radius: 20px;
+    
+}
+#profile img{
+   max-width:100%;
+   border-radius: 20px;
+}
+.grid{
+    display:flex;
+    flex-direction: row;
+    border-right:2px solid #7777;
+    width:40%;
+   line-height: 1.5;
+    margin: auto;
+    font-size: 20px;
+    align-items: center;
+    align-content:center;
+    padding: 15px;
+  
+    
+}
+
+
+#info{
+width:60%;
+height:50%;
+
+}
+@media screen and (max-width:1000px) and (max-width:680px) {
+    .grid{
+        display: flex;
+        font-size: 18px;
+
+    }
+    
+}

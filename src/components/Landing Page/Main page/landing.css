@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+}
+
+ /* Design the header for this page */ */
+ header{
+
+    background:transparent;
+    color:white;
+    width:100%;
+  
+
+}
+main{
+    background-image: url(../images/play2.jpg);
+    background-size:cover;
+    background-position: right;
+    box-shadow:  509px -114px 370px rgb(255, 225, 150) inset;
+    z-index:-1;
+    margin:8%;
+}
+#nav-bar{
+    position:fixed;
+   top:0px;
+   float:right;
+   left:88%;
+   font-size: 20px;
+   
+} #nav-bar a{
+    text-decoration: none;
+    color:wheat;
+    text-shadow: -1px 1px 0px tan;
+}
+
+
+/* video content */
+#video{
+    color:white;
+    margin-left:34%;
+   z-index: 3;
+   box-shadow: 15px 15px 15px black;
+   border:1px ridge white;
+  
+}
+#video-text{
+   color:aquamarine;
+    margin-left:45%;
+    z-index: 5;
+    font-size: 25px;
+    /* margin: auto; */
+    position: relative;
+    top:-92px;
+  
+}
+
+
+
+
+
+/* flexbox container's */
+.container{
+    display:flex ;
+    flex-direction: row;
+    color:black;
+    height:100%;
+    margin: auto;
+
+}
+
+.container > div{
+width: 100px;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+box-shadow: -5px 5px 5px sienna;
+
+}
+.container h1{
+    background-color:#fff2e0;
+    top: -31px;
+    position: relative;
+        }
+
+
+
+
+
+/* section */
+#services{
+    margin-top:8%;
+    margin-left:10%;
+    margin-right:10%;
+}
+li{
+    font-size:25px;
+    line-height: 45px;
+}
+ #content{
+    font-size: 45px;
+    text-align: center;
+    justify-self: center;
+    font-weight:700;
+    position:relative;
+    top:50px;
+    
+} 
+#plat{
+    width:50%;
+    height:25%;
+    background: linear-gradient(138deg, wheat, tan, sienna );
+    
+ 
+}
+#go{
+    width:50%;
+    height:25%;
+    background: linear-gradient(138deg, wheat, tan, sienna );
+
+}
+#sil{
+   
+    width:50%;
+    height:25%; 
+    background: linear-gradient(138deg, wheat, tan, sienna);
+   
+}
+#about{
+    
+    width:50%;
+    height:25%; 
+    background: linear-gradient(138deg, wheat, tan, sienna);
+   line-height: 1.5;
+}
+#about u{
+    color:red;
+}
+
+
+
+
+
+
+
+/* select buttons */
+.btn{
+    width:100px;
+    height:30px;
+    background-color:goldenrod;
+    border-radius: 5px;
+    box-shadow: 1px 3px 2px  black;
+    transition-duration: 0.4s;
+    color:black;
+}
+.btn a{
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+}
+.btn a:hover{
+    background-color: red;
+    color:white;
+
+}
+.btn:hover{
+    background-color: red;
+}
+
+
+
+/* email form */
+#login{
+     margin: auto; 
+}
+#form label{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow:-1px 1px 0px black;
+}
+#name, #email{
+    padding:5px;
+    width:500px;
+  
+}
+#login h3, h4{
+    text-align: center;
+    position: relative;
+    top: -50px;
+    color:sienna;
+    text-shadow: -1px 1px 0px wheat;
+    font-size: 30px;
+    line-height: 1.5px;
+}
+#submit{
+    width:100px;
+    height:30px;
+    background-color:goldenrod;
+    border-radius: 5px;
+    box-shadow: 1px 3px 2px  black;
+    transition-duration: 0.4s;
+    color:black;
+    position:relative;
+    left:207px;
+}
+fieldset{
+    background-image: url(../images/music-sheet-g8594d78ae_1920.jpg);
+    background-position: inherit;
+border:2px ridge black;
+    width:500px;
+    height:115px;
+    margin: auto;
+   position: relative;
+   top:-46px;
+}
+/* content for the Footer */
+#contact-privacy{
+    width:50%;
+    height:25%;
+}
+#contact-terms{
+    width:25%;
+    height:25%;
+}
+#contact-contact{
+    width:25%;
+    height:25%;
+}
+
+/* flexbox's for the footer and the body */
+
+
+footer{
+    background:#fff2e0;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    float:right;
+    justify-content: end;
+    width:100%;
+    
+}
+#contact a{
+    color:black;
+    text-decoration: none;
+    position: relative;
+    right:15px;
+}
+#contact p{
+    color:black;
+    position:relative;
+    top:-77px;
+    font-size: 18px;
+}
+#contact div{
+    box-shadow: none;
+}
+@media screen and (max-width:680px){
+    .container{
+        display:flex;
+    }
+}
