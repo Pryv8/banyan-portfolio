@@ -1,6 +1,6 @@
 import React from 'react'
-import CV from '../../assets/Princess Gilmore Resume.pdf'
-import ME from '../../assets/madison-lavern-4gcqRf3-f2I-unsplash.jpg'
+import CV from '../../assets/Final P.Gilmore Resume.docx'
+import ME from '../../assets/me.jpg'
 const CTA = () => {
   return (
     <div className='cta'>
@@ -10,7 +10,8 @@ const CTA = () => {
 
 
 <div className='me'>
-    <img src={ME} alt="" />
+    <img className='me2'
+    src={ME} alt="" />
 </div>
 <a href='#contact' className='scroll_down'> Scroll Down</a>
 </div>
