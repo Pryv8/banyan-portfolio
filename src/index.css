@@ -6,8 +6,9 @@ body {
     color:var(--color-white);
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
-background-image: url(../src/assets/axel-ruffini-iulnjpZyWnc-unsplash.jpg); 
+background-image: url(../src/assets/background.png); 
 background-position: center;
+background-size: cover;
 }
 
 
