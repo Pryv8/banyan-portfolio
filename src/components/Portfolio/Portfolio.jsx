@@ -5,7 +5,7 @@ import IMG2 from "../../assets/survey.JPG";
 import IMG3 from "../../assets/Technical.JPG";
 import IMG4 from "../../assets/tribute.JPG";
 import IMG5 from "../../assets/snippet.PNG";
-import TEMP from '../../assets/oscar-ivan-esquivel-arteaga-EXbxNyCypWI-unsplash.jpg'
+import TEMP from '../../assets/project1.png'
 // const data = [
 //   {
 //     id: 1,
@@ -144,7 +144,7 @@ const Portfolio = () => {
         {/* beggining of the empty card */}
         <article className="portfolio_item">
           <div className="portfolio_item-image">
-            <img src={TEMP} alt="Tribute site" />
+            <img src={TEMP} alt="code window" />
           </div>
           <h3>A placecard for the future</h3>
           <div className="portfolio_item-cta">
