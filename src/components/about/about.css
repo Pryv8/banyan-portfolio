@@ -18,10 +18,13 @@
     overflow:hidden;
     transform:rotate(10deg);
     transition: var(--transition);
+    height:380px;
 }
 .about_me-image:hover{
 transform:rotate(0deg);
+transform:scale(0.8)
 }
+
 .about_cards{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,6 +75,11 @@ color: var(--color-light);
 .about_content p{
     margin:1rem 0 1.5rem;
 }
+}
+.banner img{
+    margin: 2rem auto 2rem;
+    height:300px;
+    width:80%;
 }
 /* ================== Media Query (Small Dveices) ===================== */
 @media screen and ( max-width: 600px){

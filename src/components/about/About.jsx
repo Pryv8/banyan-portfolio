@@ -1,9 +1,10 @@
 import React from "react";
 import "./about.css";
 import {FaAward} from 'react-icons/fa'
-import ME from '../../assets/madison-lavern-4gcqRf3-f2I-unsplash.jpg'
+import ME from '../../assets/me.jpg'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
+import Banner from '../about/Banner'
 const About = () => {
   return (
     <section id="about">
